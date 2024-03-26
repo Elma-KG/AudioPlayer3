@@ -1,36 +1,64 @@
-package v.audioplayer;
+package v.vidmot;
 
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+import v.vinnsla.Askrifandi;
+import v.vinnsla.Lag;
+import v.vinnsla.Lagalisti;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.Optional;
+import java.util.ResourceBundle;
 
 public class PlayerController {
     @FXML
-    private Label welcomeText;
-
-    @FXML
     private Button lagalisti;
 
+
     @FXML
-    protected void onAskrifandiButton() {
-        lagalisti.setText("virkar");
+    private Button fxAskrifandi;
+
+    private ListView<String> listView = new ListView<>();
+
+    public void initialize(){
+
+    }
+
+    public void onVeljaLista(ActionEvent mouseEvent){
+        Button reitur = (Button) mouseEvent.getSource();
+        int i = GridPane.getRowIndex(reitur);
+
+        if (i==0){
+            System.out.println("valið var Lagalista 1");
+
+            //ef valið er lagalista 1 þa er farið í þennan glugga
+
+
+        } else if (i==1) {
+            System.out.println("valið var Lagalista 2");
+
+            //ef vali' er lagalista 2 þá er farið í gluggan sem tengir við það
+
+        }
+
+        ViewSwitcher.switchTo(View.LISTI);
+
     }
 
 
-    @FXML
-    private void onLagalistiButton(){
-        lagalisti.setText("idk");
-    }
-
-    @FXML
-    private void onLagalisti1(){
-        System.out.println("virkar");
-    }
-
-    @FXML
-    private void onLagalisti2(){
-        System.out.println("virkar");
-    }
-
-
+    public void onLogin(MouseEvent event){
+        Dialog<Askrifandi> dialog = new AskrifandiDialog(new Askrifandi(null));
+        Optional<Askrifandi> utkoma = dialog.showAndWait();
+        utkoma.ifPresent(value -> fxAskrifandi.setText(value.getNafn()));
+        }
 }

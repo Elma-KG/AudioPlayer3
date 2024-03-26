@@ -1,8 +1,9 @@
 module v.audioplayer3 {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.media;
 
 
-    opens v.audioplayer3 to javafx.fxml;
-    exports v.audioplayer3;
+    opens v.vidmot to javafx.fxml, javafx.media;
+    exports v.vidmot;
 }
