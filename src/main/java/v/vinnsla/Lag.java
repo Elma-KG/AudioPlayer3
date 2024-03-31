@@ -7,14 +7,18 @@ public class Lag {
     private final String lagNafn;  //nafnið á laginu
     private final String myndskraNafn;  //myndin sem er sýnd af laginu
 
-    private final String url;
+    private final int lengd;
 
-    public Lag(String hljodskraNafn, String lagNafn, String myndskraNafn, String url){
-        this.hljodskraNafn = hljodskraNafn;
-        this.lagNafn = lagNafn;
-        this.myndskraNafn = myndskraNafn;
-        this.url = url;
 
+    public Lag(String slod, String mynd, String nafn, int lengd){
+        this.hljodskraNafn = slod;
+        this.lagNafn = nafn;
+        this.myndskraNafn = mynd;
+        this.lengd = lengd;
+    }
+    @Override
+    public String toString(){
+        return lagNafn;
     }
     public String getHljodskraNafn(){
         return hljodskraNafn;
@@ -25,8 +29,8 @@ public class Lag {
     public String getMyndskraNafn(){
         return myndskraNafn;
     }
-
-    public String getUrl() {
-        return url;
+    public int getLengd(){
+        return lengd;
     }
+
 }

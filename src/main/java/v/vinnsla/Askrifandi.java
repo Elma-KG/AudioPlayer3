@@ -14,16 +14,13 @@ public class Askrifandi {
     private final StringProperty nafn = new SimpleStringProperty();
 
     public Askrifandi(String nafn){
-        this.nafn.set(nafn);
+        setNafn(nafn);
     }
 
     public String getNafn() {
         return nafn.get();
     }
 
-    public StringProperty nafnProperty() {
-        return nafn;
-    }
 
     public void setNafn(String nafn) {
         this.nafn.set(nafn);

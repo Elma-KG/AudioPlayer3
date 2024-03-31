@@ -17,11 +17,7 @@ public class Lagalisti {
     private final ObservableList<Lag> lagListi = FXCollections.observableArrayList();
     private int currentIndex =0;
 
-    public Lagalisti() {
-        currentIndex = -1;
-        lagListi.add(new Lag("sample-3s.mp3", "Va", "fox.png", "file:/C:/Users/Administrator/OneDrive - Menntaský/Documents/Viðmótsforritun/AudioPlayer3/src/main/resources/v/media/sample-3s.mp3"));
-        lagListi.add(new Lag("sample-6s.mp3", "Við", "fox.png", "file:/C:/UsersAdministrator/OneDrive - Menntaský/Documents/Viðmótsforritun/AudioPlayer3/src/main/resources/v/media/sample-6s.mp3"));
-    }
+
 
     public void lesaLog(String nafnASkra) throws IOException {
 
@@ -30,30 +26,36 @@ public class Lagalisti {
         Scanner scanner = new Scanner(file, StandardCharsets.UTF_8);
 
         String[] line;
-
-        while (scanner.hasNextLine()) {
-            String[] gogn = scanner.nextLine().split(",");
-
-
-            if (gogn.length >= 4) {
-                String hljodskraNafn = gogn[0];
-                String lagNafn = gogn[1];
-                String myndskraNafn = gogn[2];
-                String url = gogn[3];
-
-                Lag lag = new Lag(hljodskraNafn, lagNafn, myndskraNafn, url);
-                lagListi.add(lag);
-            } else {
-                System.out.println("rangt");
+        try {
+            while (scanner.hasNextLine()){
+                line = scanner.nextLine().split(" ");
+                lagListi.add(new Lag (line[0], line[3], line[1], Integer.parseInt(line[2])));
             }
+            scanner.close();
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
+
+
 
 
         }
+
+    public void naesti(){
+        currentIndex = ++currentIndex % lagListi.size();
     }
 
-    public ObservableList<Lag> getLagListi() {
+    public ObservableList<Lag> getLagListi(){
         return lagListi;
     }
+    public void setIndex(int index){
+        currentIndex = index;
+    }
+    public int getIndex(){
+        return currentIndex;
+    }
 }
+
+
 
 

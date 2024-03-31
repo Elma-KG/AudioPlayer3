@@ -8,19 +8,32 @@ import java.util.List;
 
 //allt static breytur og aðferðir
 public class Lagalistar {
-    private static final int MAX_LISTS = 2;
+    public static final String SKRA_FANNST_EKKI = "Skra fannst ekki";
+    public static final String SUFFIX = ".mp3";
+    public static final String NAFN = "listi";
+    private static int index;
 
-    private List<Lagalisti> lagaListar;
+    private static final Lagalisti[] listar = new Lagalisti[2];
 
-    public Lagalistar(){
-        lagaListar = new ArrayList<>(MAX_LISTS);
+    public static void frumstilla(){
+        for (int i = 0; i < listar.length; i++){
+            listar[i] = new Lagalisti();
+            try {
+                listar[i].lesaLog(NAFN + (i+1) + SUFFIX);
+                System.out.println(listar[i]);
+            }catch (Exception e){
+                System.out.println(SKRA_FANNST_EKKI);
+                throw new RuntimeException(e);
+            }
+        }
     }
 
-    public void addLagaLista(Lagalisti lagalisti){
-        if (lagaListar.size() < MAX_LISTS){
-            lagaListar.add(lagalisti);
-        }else {
-            System.out.println("Maximum number of lagalistar reached.");
-        }
+    public static Lagalisti getNuverandi(){
+        return listar[index];
+    }
+
+    public static void setIndex(int index){
+        Lagalistar.index = index;
+
     }
 }

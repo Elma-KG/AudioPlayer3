@@ -11,7 +11,8 @@ import java.io.IOException;
 public class PlayerApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        var scene = new Scene(new Pane());
+        FXMLLoader fxmlLoader = new FXMLLoader(PlayerApplication.class.getResource("heima-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 500, 400);
 
         ViewSwitcher.setScene(scene);
         ViewSwitcher.switchTo(View.HEIMA);

@@ -4,25 +4,35 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.util.Duration;
 import v.vinnsla.Lag;
+import v.vinnsla.Lagalistar;
 import v.vinnsla.Lagalisti;
 
 public class ListiController {
+    private final String PLAY = "play.png";  /// laga þetta ekki inn á dótinu
+    private final String PAUSE = "pause.png";  /// laga þetta ekki inn á dótinu
 
 
     @FXML
-    private ListView<Lag> fxListView;
+    protected ListView<Lag> fxListView; //lagalisti
     @FXML
+    public ProgressBar progressBar;
+    @FXML
+    protected ImageView fxPlayPauseMynd; // mynd fyrir play/paus button
+    @FXML
+    protected ImageView fxMyndLags;  // mynd fyrir lag
+
+
     private Lag validLag;
-
     private Lagalisti lagalisti;
-
-    @FXML
     private MediaPlayer mediaPlayer;
 
-    private ProgressBar progressBar;
 
 
     /**
@@ -30,8 +40,13 @@ public class ListiController {
      */
 
     public void initialize() {
-        lagalisti = new Lagalisti();
-        fxListView.setItems(lagalisti.getLagListi());
+        lagalisti = Lagalistar.getNuverandi();
+        fxListView.setItems(lagalisti.getLagListi()); // virkar þetta??
+        fxListView.getSelectionModel().select(lagalisti.getIndex());
+        fxListView.requestFocus();
+
+        veljaLag();
+        setjaPlayer();
     }
 
     /**
@@ -40,7 +55,8 @@ public class ListiController {
      * @param mouseEvent
      */
     @FXML
-    void onValidLag(MouseEvent mouseEvent) {
+    protected void onValidLag(MouseEvent mouseEvent) {
+        System.out.println(fxListView.getSelectionModel().getSelectedItem());
         veljaLag();
         spilaLag();
     }
@@ -50,7 +66,8 @@ public class ListiController {
      */
     private void veljaLag() {
         validLag = fxListView.getSelectionModel().getSelectedItem();
-
+        lagalisti.setIndex(fxListView.getSelectionModel().getSelectedItem().getLengd());
+        setjaMynd(fxMyndLags, validLag.getMyndskraNafn());
     }
 
     /**
@@ -59,7 +76,13 @@ public class ListiController {
      * @param actionEvent ónotað
      */
     private void onPlayPause(ActionEvent actionEvent) {
-
+        if(mediaPlayer.getStatus().equals((MediaPlayer.Status.PLAYING))){
+            setjaMynd(fxPlayPauseMynd, PLAY);
+            mediaPlayer.pause();
+        }else if (mediaPlayer.getStatus().equals(MediaPlayer.Status.PAUSED)){
+            setjaMynd(fxPlayPauseMynd, PAUSE);
+            mediaPlayer.play();
+        }
 
     }
 
@@ -81,7 +104,9 @@ public class ListiController {
      * Spila lagið
      */
     private void spilaLag() {
-
+        setjaMynd(fxPlayPauseMynd, PAUSE);
+        setjaPlayer();
+        mediaPlayer.play();
 
     }
 
@@ -91,9 +116,11 @@ public class ListiController {
      * @param fxImageView viðmótshluturinn sem á að uppfærast
      * @param nafnMynd    nafn á myndinni
      */
-    //void setjaMynd(ImageView fxImageView, String nafnMynd) {
+    private void setjaMynd(ImageView fxImageView, String nafnMynd) {
+        System.out.println(nafnMynd);
+        fxImageView.setImage(new Image(getClass().getResource(nafnMynd).toExternalForm()));
 
-    //}
+    }
 
     /**
      * Setja upp player fyrir lagið, þ.m.t. at setja handler á hvenær lagið stoppar
@@ -104,13 +131,20 @@ public class ListiController {
         if (mediaPlayer != null){
             mediaPlayer.stop();
         }
-
-
+        mediaPlayer = new MediaPlayer(new Media(getClass().getResource(validLag.getHljodskraNafn()).toExternalForm()));
+        mediaPlayer.setStopTime(new Duration(validLag.getLengd()));
+        mediaPlayer.setOnEndOfMedia(this::naestaLag);
+        mediaPlayer.currentTimeProperty().addListener((observable, oldValue, newValue) ->
+                progressBar.setProgress(newValue.divide(validLag.getLengd()).toMillis()));
     }
     /**
      * Næsta lag er spilað. Kallað á þessa aðferð þegar fyrra lag á listanum endar
      */
     void naestaLag() {
+        lagalisti.naesti();
+        fxListView.getSelectionModel().selectIndices(lagalisti.getIndex());
+        veljaLag();
+        spilaLag();
 
     }
 }
