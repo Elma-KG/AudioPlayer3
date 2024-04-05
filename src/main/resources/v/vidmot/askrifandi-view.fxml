@@ -6,28 +6,26 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-    <header>
-      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0">
-         <children>
-            <Label prefHeight="70.0" prefWidth="327.0" text="Áskrifandi">
-               <padding>
-                  <Insets left="10.0" />
-               </padding>
-            </Label>
-            <Label layoutX="1.0" layoutY="63.0" prefHeight="45.0" prefWidth="90.0" text="Nafn">
-               <padding>
-                  <Insets left="10.0" />
-               </padding>
-            </Label>
-            <TextField fx:id="fxnafnTextField" layoutX="91.0" layoutY="67.0" prefHeight="35.0" prefWidth="220.0" promptText="Notendanafn" />
-         </children>
-      </AnchorPane>
-    </header>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<DialogPane prefHeight="175.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <ButtonType  buttonData="OK_DONE" text="Í lagi" />
+    <ButtonType buttonData="CANCEL_CLOSE" text="Hætta við" />
     <content>
-      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="48.0" prefWidth="416.0" />
+        <VBox prefHeight="114.0" prefWidth="340.0">
+            <children>
+                <HBox prefHeight="30.0" prefWidth="320.0">
+                    <children>
+                        <Label prefHeight="26.0" prefWidth="160.0" text="Nafn" />
+                        <TextField fx:id="fxNafn" prefHeight="25.0" prefWidth="179.0" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
     </content>
-    <expandableContent>
-      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
-    </expandableContent>
 </DialogPane>

@@ -48,7 +48,7 @@ public class PlayerController {
     }
 
 
-    public void onLogin(MouseEvent event){
+    public void onLogin(){
         Dialog<Askrifandi> dialog = new AskrifandiDialog(new Askrifandi(ASKRIFANDI));
         Optional<Askrifandi> utkoma = dialog.showAndWait();
         utkoma.ifPresent(value -> fxAskrifandi.setText(value.getNafn()));

@@ -75,6 +75,7 @@ public class ListiController {
      *
      * @param actionEvent ónotað
      */
+    @FXML
     private void onPlayPause(ActionEvent actionEvent) {
         if(mediaPlayer.getStatus().equals((MediaPlayer.Status.PLAYING))){
             setjaMynd(fxPlayPauseMynd, PLAY);

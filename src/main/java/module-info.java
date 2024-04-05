@@ -6,4 +6,9 @@ module v.audioplayer3 {
 
     opens v.vidmot to javafx.fxml, javafx.media;
     exports v.vidmot;
+
+    opens v.vinnsla to javafx.fxml;
+    exports v.vinnsla;
+
+
 }

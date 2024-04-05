@@ -42,10 +42,28 @@
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
-    </dependency>  </dependencies>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.1</version>
+        <configuration>
+          <mainClass>v.audioplayer3/v.vidmot.PlayerApplication</mainClass>
+        </configuration>
+      </plugin>
+
+
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
