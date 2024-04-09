@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="lagalistiTest added">
+    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="Bætti við LagalistarTest">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compile.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LagalistarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LagalistarTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,91 +47,79 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.PlayerApplication.executor": "Run",
-    "JUnit.LagalistarTest.testFrumstilla.executor": "Run",
-    "JUnit.LagalistarTest.testGetLagNafn.executor": "Run",
-    "JUnit.LagalistarTest.testGetNuverandi.executor": "Run",
-    "JUnit.askrifandiTest.testName.executor": "Run",
-    "JUnit.askrifandiTest.testName2.executor": "Run",
-    "JUnit.lagTest.testHljodskraNafn.executor": "Run",
-    "JUnit.lagTest.testLagNafn.executor": "Run",
-    "JUnit.lagTest.testLengd.executor": "Run",
-    "JUnit.lagTest.testMyndskraNafn.executor": "Run",
-    "JUnit.lagalistiTest.indexIsNull.executor": "Run",
-    "JUnit.lagalistiTest.test.executor": "Run",
-    "JUnit.lagalistiTest.testGetLagListi.executor": "Run",
-    "JUnit.lagalistiTest.testIndex.executor": "Run",
-    "JUnit.lagalistiTest.testIndex2.executor": "Run",
-    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
-    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
-    "Maven.AudioPlayer3 [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Administrator/OneDrive - Menntaský/Documents/Viðmótsforritun/AudioPlayer3",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PlayerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.askrifandiTest.testName.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.askrifandiTest.testName2.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [org.openjfx:javafx-maven-plugin:0.0.8:run].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/OneDrive - Menntaský/Documents/Viðmótsforritun/AudioPlayer3&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Documents\Viðmótsforritun\AudioPlayer3.1\src\main\resources\v\vidmot\media" />
       <recent name="C:\Users\Administrator\OneDrive - Menntaský\Documents\Viðmótsforritun\AudioPlayer3\src\main\resources\v" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.lagalistiTest.testGetLagListi">
-    <configuration name="LagalistarTest.testFrumstilla" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="LagalistarTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LagalistarTest" />
-      <option name="METHOD_NAME" value="testFrumstilla" />
+      <option name="METHOD_NAME" value="setTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LagalistarTest.testGetNuverandi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="askrifandiTest.emptyString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LagalistarTest" />
-      <option name="METHOD_NAME" value="testGetNuverandi" />
+      <option name="MAIN_CLASS_NAME" value="askrifandiTest" />
+      <option name="METHOD_NAME" value="emptyString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lagalistiTest.indexIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="askrifandiTest.isNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="lagalistiTest" />
-      <option name="METHOD_NAME" value="indexIsNull" />
+      <option name="MAIN_CLASS_NAME" value="askrifandiTest" />
+      <option name="METHOD_NAME" value="isNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lagalistiTest.testGetLagListi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="askrifandiTest.testName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="lagalistiTest" />
-      <option name="METHOD_NAME" value="testGetLagListi" />
+      <option name="MAIN_CLASS_NAME" value="askrifandiTest" />
+      <option name="METHOD_NAME" value="testName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lagalistiTest.testIndex2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="askrifandiTest.testName2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="lagalistiTest" />
-      <option name="METHOD_NAME" value="testIndex2" />
+      <option name="MAIN_CLASS_NAME" value="askrifandiTest" />
+      <option name="METHOD_NAME" value="testName2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.lagalistiTest.testGetLagListi" />
-        <item itemvalue="JUnit.lagalistiTest.indexIsNull" />
-        <item itemvalue="JUnit.LagalistarTest.testGetNuverandi" />
-        <item itemvalue="JUnit.LagalistarTest.testFrumstilla" />
-        <item itemvalue="JUnit.lagalistiTest.testIndex2" />
+        <item itemvalue="JUnit.LagalistarTest.setTest" />
+        <item itemvalue="JUnit.askrifandiTest.isNull" />
+        <item itemvalue="JUnit.askrifandiTest.emptyString" />
+        <item itemvalue="JUnit.askrifandiTest.testName2" />
+        <item itemvalue="JUnit.askrifandiTest.testName" />
       </list>
     </recent_temporary>
   </component>
@@ -166,30 +159,32 @@
       <option name="project" value="LOCAL" />
       <updated>1711451215754</updated>
     </task>
-    <task id="LOCAL-00002" summary="lagTest added">
+    <task id="LOCAL-00002" summary="Bætti við LagalistarTest">
       <option name="closed" value="true" />
-      <created>1712657577421</created>
+      <created>1712657592990</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1712657577421</updated>
+      <updated>1712657592990</updated>
     </task>
-    <task id="LOCAL-00003" summary="lagalistiTest added">
-      <option name="closed" value="true" />
-      <created>1712658710212</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1712658710212</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1 commit bætt við frá upphaflegu verkefni" />
-    <MESSAGE value="lagTest added" />
-    <MESSAGE value="lagalistiTest added" />
-    <option name="LAST_COMMIT_MESSAGE" value="lagalistiTest added" />
+    <MESSAGE value="Bætti við LagalistarTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bætti við LagalistarTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
