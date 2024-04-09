@@ -15,16 +15,16 @@ import v.vinnsla.Lagalistar;
 import v.vinnsla.Lagalisti;
 
 public class ListiController {
-    private final String PLAY = "play.png";  /// laga þetta ekki inn á dótinu
-    private final String PAUSE = "pause.png";  /// laga þetta ekki inn á dótinu
+    private final String PLAY = "media/playpause.png";
+    private final String PAUSE = "media/playpause.png";
 
 
-    @FXML
-    protected ListView<Lag> fxListView; //lagalisti
     @FXML
     public ProgressBar progressBar;
     @FXML
     protected ImageView fxPlayPauseMynd; // mynd fyrir play/paus button
+    @FXML
+    protected ListView<Lag> fxListView; //lagalisti
     @FXML
     protected ImageView fxMyndLags;  // mynd fyrir lag
 
@@ -97,7 +97,7 @@ public class ListiController {
         if (mediaPlayer != null){
             mediaPlayer.stop();
         }
-        ViewSwitcher.switchTo(View.HEIMA);
+        ViewSwitcher.switchTo(View.HEIMA, true);
 
     }
 
@@ -118,7 +118,7 @@ public class ListiController {
      * @param nafnMynd    nafn á myndinni
      */
     private void setjaMynd(ImageView fxImageView, String nafnMynd) {
-        System.out.println(nafnMynd);
+        System.out.println("nafn á mynd" + nafnMynd);
         fxImageView.setImage(new Image(getClass().getResource(nafnMynd).toExternalForm()));
 
     }

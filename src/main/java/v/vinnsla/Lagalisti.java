@@ -22,7 +22,7 @@ public class Lagalisti {
     public void lesaLog(String nafnASkra) throws IOException {
 
         System.out.println(System.getProperty("user.dir"));
-        File file = new File(System.getProperty("user.dir") + "src/main/resources/v/" + nafnASkra);
+        File file = new File(System.getProperty("user.dir") + "src/main/resources/v/vinnsla/" + nafnASkra);
         Scanner scanner = new Scanner(file, StandardCharsets.UTF_8);
 
         String[] line;

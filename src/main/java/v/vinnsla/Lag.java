@@ -11,7 +11,7 @@ public class Lag {
 
 
     public Lag(String slod, String mynd, String nafn, int lengd){
-        this.hljodskraNafn = slod;
+        hljodskraNafn = slod;
         this.lagNafn = nafn;
         this.myndskraNafn = mynd;
         this.lengd = lengd;

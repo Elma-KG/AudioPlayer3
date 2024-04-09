@@ -9,8 +9,8 @@ import java.util.List;
 //allt static breytur og aðferðir
 public class Lagalistar {
     public static final String SKRA_FANNST_EKKI = "Skra fannst ekki";
-    public static final String SUFFIX = ".mp3";
-    public static final String NAFN = "listi";
+    public static final String SUFFIX = ".dat";
+    public static final String NAFN = "lagalisti";
     private static int index;
 
     private static final Lagalisti[] listar = new Lagalisti[2];
@@ -34,6 +34,5 @@ public class Lagalistar {
 
     public static void setIndex(int index){
         Lagalistar.index = index;
-
     }
 }

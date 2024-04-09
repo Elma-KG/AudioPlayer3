@@ -4,6 +4,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -27,30 +28,43 @@ public class PlayerController {
 
 
     @FXML
-    private Button fxAskrifandi;
+    protected Button fxAskrifandi;
 
 
 
     public void initialize(){
+        Lagalistar.frumstilla();
 
     }
 
+    @FXML
     public void onVeljaLista(ActionEvent mouseEvent){
-        Button reitur = (Button) mouseEvent.getSource();
+
+        int i = GridPane.getRowIndex((Node) mouseEvent.getSource());
+        int j = GridPane.getColumnIndex((Node) mouseEvent.getSource());
+        // skiptum yfir í lagalistann í vinnslunni sem var valið
+        Lagalistar.setIndex(i * 2 + j);
+        // skiptum yfir í LAGALISTI view
+        ViewSwitcher.switchTo(View.LISTI, false);
+        /**Button reitur = (Button) mouseEvent.getSource();
         int i = GridPane.getRowIndex(reitur);
         int j = GridPane.getColumnIndex(reitur);
 
         Lagalistar.setIndex(i*2+j);
 
 
-        ViewSwitcher.switchTo(View.LISTI);
+        ViewSwitcher.switchTo(View.LISTI);*/
 
     }
 
 
     public void onLogin(){
-        Dialog<Askrifandi> dialog = new AskrifandiDialog(new Askrifandi(ASKRIFANDI));
+        AskrifandiDialog dialog = new AskrifandiDialog(new Askrifandi(ASKRIFANDI));
+        // sýndu dialoginn
         Optional<Askrifandi> utkoma = dialog.showAndWait();
-        utkoma.ifPresent(value -> fxAskrifandi.setText(value.getNafn()));
-        }
+        // Ef fékkst svar úr dialognum setjum við nafnið á áskrifandanum í notendaviðmótið
+        utkoma.ifPresent (a -> {
+            fxAskrifandi.setText(a.getNafn());});
+
+    }
 }

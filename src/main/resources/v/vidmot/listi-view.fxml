@@ -22,13 +22,13 @@
                             <children>
                                 <VBox prefHeight="70.0" prefWidth="168.0">
                                     <children>
-                                        <ImageView fx:id="fxMyndLagView" fitHeight="30.0" fitWidth="168.0" />
-                                        <ProgressBar fx:id="fxProgressBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="168.0" progress="0.03" />
+                                        <ImageView fx:id="fxMyndLags" fitHeight="30.0" fitWidth="168.0" />
+                                        <ProgressBar fx:id="progressBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="168.0" progress="0.03" />
                                     </children>
                                 </VBox>
                                 <Button styleClass="image-button" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onPlayPause" prefHeight="30.0" prefWidth="26.0">
                                     <graphic>
-                                        <ImageView fx:id="fxPlayPauseView" fitHeight="20" fitWidth="20">
+                                        <ImageView fx:id="fxPlayPauseMynd" fitHeight="20" fitWidth="20">
                                             <Image url="@media/playpause.png" />
                                         </ImageView>
                                     </graphic>

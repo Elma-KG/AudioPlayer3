@@ -12,30 +12,34 @@ public class ViewSwitcher {
 
     private static Map<View, Parent> cache = new HashMap<>();
 
+    private static final Map<View, Scene> controllers = new HashMap<>();
     private static Scene scene;
 
     public static void setScene(Scene scene){
         ViewSwitcher.scene = scene;
     }
 
-    public static void switchTo(View view){
+    public static void switchTo(View view, boolean b){
         if(scene == null){
             System.out.println("ekkert fannst");
             return;
         }
         try {
             Parent root;
-            if (cache.containsKey(view)){
-                System.out.println("loading from cache");
+            if (cache.containsKey(view) && b) {
+                System.out.println("Loading from cache");
                 root = cache.get(view);
-            }else {
-                System.out.println("loading from FXML");
-                root = FXMLLoader.load(
-                        ViewSwitcher.class.getResource(view.getFileName()));
+            } else {
+                System.out.println("Loading from FXML "+view.getFileName());
+                FXMLLoader loader = new FXMLLoader(ViewSwitcher.class.getResource(view.getFileName()));
+                root = loader.load();
+
                 cache.put(view, root);
+                //   scene.setRoot(root);
+                controllers.put(view, loader.getController());
             }
             scene.setRoot(root);
-        }catch (IOException e){
+            }catch (IOException e) {
             e.printStackTrace();
         }
 

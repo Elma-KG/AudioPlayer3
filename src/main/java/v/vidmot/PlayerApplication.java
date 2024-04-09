@@ -3,7 +3,6 @@ package v.vidmot;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,7 +14,7 @@ public class PlayerApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 500, 400);
 
         ViewSwitcher.setScene(scene);
-        ViewSwitcher.switchTo(View.HEIMA);
+        ViewSwitcher.switchTo(View.HEIMA, true);
 
         stage.setScene(scene);
         stage.show();

@@ -3,9 +3,9 @@ package v.vidmot;
 public enum View {
 
 
-    ASKRIFANDI("askrifandi-view.fxml"),
     HEIMA("heima-view.fxml"),
-    LISTI("listi-view.fxml");
+    LISTI("listi-view.fxml"),
+    ASKRIFANDI("askrifandi-view.fxml");
 
     private String fileName;
 

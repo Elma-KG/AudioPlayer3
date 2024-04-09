@@ -20,7 +20,7 @@ public class AskrifandiDialog extends Dialog<Askrifandi> {
 
 
     public DialogPane lesaDialog(){
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("askrifandi-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(AskrifandiDialog.class.getResource(View.ASKRIFANDI.getFileName()));
         try {
             fxmlLoader.setController(this);
             return fxmlLoader.load();
@@ -28,12 +28,6 @@ public class AskrifandiDialog extends Dialog<Askrifandi> {
             throw new RuntimeException(exception);
         }
     }
-
-    private void disableRegla() {
-        Node disableR= getDialogPane().lookupButton(ButtonType.OK);
-        disableR.disableProperty().bind(fxnafnTextField.textProperty().isEmpty());
-    }
-
 
 
     public AskrifandiDialog(Askrifandi a){
@@ -49,9 +43,6 @@ public class AskrifandiDialog extends Dialog<Askrifandi> {
 
 
 
-    private boolean valiidateDialog() {
-        return !fxnafnTextField.getText().isEmpty();
-    }
 
 
 
