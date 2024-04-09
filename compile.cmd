@@ -1,1 +1,1 @@
-javac -d bin src\*.java src\main\java\v\vidmot\*.java src\*.java src\main\java\v\vinnsla\*.java src/*.java
+mvn jar:jar

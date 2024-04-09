@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="Bætti við LagalistarTest" />
+    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="bin added and gitignore">
+      <change afterPath="$PROJECT_DIR$/mymanifest.mf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/compile.cmd" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +24,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Joij04"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b3505b2d-8751-47bf-9534-4906f37ffee5" />
+        <option name="url" value="https://github.com/Elma-KG/AudioPlayer3.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -67,7 +85,7 @@
       <recent name="C:\Users\Administrator\OneDrive - Menntaský\Documents\Viðmótsforritun\AudioPlayer3\src\main\resources\v" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.askrifandiTest.emptyString">
+  <component name="RunManager" selected="JAR Application.AudioPlayer3-1.0-SNAPSHOT.jar">
     <configuration name="LagalistarTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
@@ -98,16 +116,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="askrifandiTest.testName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AudioPlayer3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="askrifandiTest" />
-      <option name="METHOD_NAME" value="testName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="askrifandiTest.testName2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
@@ -118,13 +126,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AudioPlayer3-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/AudioPlayer3-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.AudioPlayer3-1.0-SNAPSHOT.jar" />
         <item itemvalue="JUnit.LagalistarTest.setTest" />
         <item itemvalue="JUnit.askrifandiTest.isNull" />
         <item itemvalue="JUnit.askrifandiTest.emptyString" />
         <item itemvalue="JUnit.askrifandiTest.testName2" />
-        <item itemvalue="JUnit.askrifandiTest.testName" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712659893257</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="bin added and gitignore">
+      <option name="closed" value="true" />
+      <created>1712660383585</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712660383585</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,7 +206,8 @@
     <MESSAGE value="1 commit bætt við frá upphaflegu verkefni" />
     <MESSAGE value="Bætti við LagalistarTest" />
     <MESSAGE value="Bætti við compile.cmd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bætti við compile.cmd" />
+    <MESSAGE value="bin added and gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="bin added and gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

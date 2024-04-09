@@ -1,0 +1,1 @@
+Main-Class: v.vidmot.PlayerApplication
