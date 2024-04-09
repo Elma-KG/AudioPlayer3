@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="Bætti við LagalistarTest">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compile.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LagalistarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LagalistarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compile.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/compile.cmd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +71,7 @@
       <recent name="C:\Users\Administrator\OneDrive - Menntaský\Documents\Viðmótsforritun\AudioPlayer3\src\main\resources\v" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.askrifandiTest.emptyString">
     <configuration name="LagalistarTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
