@@ -15,6 +15,8 @@ public class lagalistiTest {
         lagalisti = new Lagalisti();
     }
 
+
+
     @Test
     public void testIndex(){
         assertEquals(0,lagalisti.getIndex());
