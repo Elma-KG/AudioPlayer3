@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="bin added and gitignore">
+    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="lag og askrifandi Test eru komin">
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compile.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LagalistarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LagalistarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lagTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lagalistiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lagalistiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,9 @@
     "JUnit.askrifandiTest.testName.executor": "Run",
     "JUnit.askrifandiTest.testName2.executor": "Run",
     "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
+    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-clean-plugin:2.5:help].executor": "Run",
     "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
+    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-site-plugin:3.3:site].executor": "Run",
     "Maven.AudioPlayer3 [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -192,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712660383585</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lag og askrifandi Test eru komin">
+      <option name="closed" value="true" />
+      <created>1712835619181</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712835619181</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +220,8 @@
     <MESSAGE value="Bætti við LagalistarTest" />
     <MESSAGE value="Bætti við compile.cmd" />
     <MESSAGE value="bin added and gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="bin added and gitignore" />
+    <MESSAGE value="lag og askrifandi Test eru komin" />
+    <option name="LAST_COMMIT_MESSAGE" value="lag og askrifandi Test eru komin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
