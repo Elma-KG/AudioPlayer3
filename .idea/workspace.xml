@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="lag og askrifandi Test eru komin">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="maven site added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v/vinnsla/Lagalisti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vinnsla/Lagalisti.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +89,20 @@
       <recent name="C:\Users\Administrator\OneDrive - Menntaský\Documents\Viðmótsforritun\AudioPlayer3\src\main\resources\v" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LagalistarTest.testFrumstilla">
+  <component name="RunManager" selected="Application.PlayerApplication">
+    <configuration name="PlayerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="v.vidmot.PlayerApplication" />
+      <module name="AudioPlayer3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="v.vidmot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LagalistarTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
@@ -104,16 +118,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LagalistarTest" />
       <option name="METHOD_NAME" value="testFrumstilla" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="askrifandiTest.emptyString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AudioPlayer3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="askrifandiTest" />
-      <option name="METHOD_NAME" value="emptyString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PlayerApplication" />
         <item itemvalue="JUnit.LagalistarTest.testFrumstilla" />
         <item itemvalue="JAR Application.AudioPlayer3-1.0-SNAPSHOT.jar" />
         <item itemvalue="JUnit.LagalistarTest.setTest" />
         <item itemvalue="JUnit.askrifandiTest.isNull" />
-        <item itemvalue="JUnit.askrifandiTest.emptyString" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712835619181</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="maven site added">
+      <option name="closed" value="true" />
+      <created>1712913084874</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712913084874</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,7 +231,8 @@
     <MESSAGE value="Bætti við compile.cmd" />
     <MESSAGE value="bin added and gitignore" />
     <MESSAGE value="lag og askrifandi Test eru komin" />
-    <option name="LAST_COMMIT_MESSAGE" value="lag og askrifandi Test eru komin" />
+    <MESSAGE value="maven site added" />
+    <option name="LAST_COMMIT_MESSAGE" value="maven site added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -228,6 +241,26 @@
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/v/vidmot/PlayerApplication.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/v/vidmot/PlayerApplication.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/v/vidmot/PlayerApplication.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/v/vidmot/PlayerApplication.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -10,9 +10,9 @@ import java.util.Map;
 
 public class ViewSwitcher {
 
-    private static Map<View, Parent> cache = new HashMap<>();
+    private static final Map<View, Parent> cache = new HashMap<>();
 
-    private static final Map<View, Scene> controllers = new HashMap<>();
+    private static final Map<View, Object> controllers = new HashMap<>();
     private static Scene scene;
 
     public static void setScene(Scene scene){
