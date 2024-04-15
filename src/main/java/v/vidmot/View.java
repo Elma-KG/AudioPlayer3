@@ -7,7 +7,7 @@ public enum View {
     LISTI("listi-view.fxml"),
     ASKRIFANDI("askrifandi-view.fxml");
 
-    private String fileName;
+    private final String fileName;
 
     View(String fileName){
         this.fileName = fileName;
