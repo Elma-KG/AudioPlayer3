@@ -18,6 +18,7 @@ public class PlayerApplication extends Application {
         ViewSwitcher.setScene(scene);
         ViewSwitcher.switchTo(View.HEIMA, true);
 
+        stage.setTitle("Audio Player");
         stage.setScene(scene);
         stage.show();
     }

@@ -31,7 +31,7 @@ public class AskrifandiDialog extends Dialog<Askrifandi> {
 
 
     public AskrifandiDialog(Askrifandi a){
-        super();
+        //super();
         this.askrifandi = a;
 
         this.setTitle("Innskráning");
@@ -40,16 +40,9 @@ public class AskrifandiDialog extends Dialog<Askrifandi> {
         //setja niðurstöðu skoðunaraðferð
         setResultConverter();
     }
-
-
-
-
-
-
     //tékkar hvor að það var sett eitthvað í textfield þar sem nafnið á að koma og hvort var ýtt á OK
 
     private void setResultConverter(){
-
         setResultConverter(b -> {
             if (b.getButtonData() == ButtonBar.ButtonData.OK_DONE){
                 askrifandi.setNafn(fxnafnTextField.getText());  //nær í nafnið úr dialog og setja í áskrifanda hlut

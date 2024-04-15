@@ -1,4 +1,4 @@
-# HBV202GAssignment10
+# HBV202G AudioPlayer
 A project that can make you "login" with your name and then make you chose between a few playlist, and after choosing one you can play the song that 
 are on that playlist. Making the song stop and start, while also seeing the progress of how much of the song has played.
 

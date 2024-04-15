@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="lag og askrifandi Test eru komin">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/AskrifandiDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/AskrifandiDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/PlayerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/PlayerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/ViewSwitcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/ViewSwitcher.java" afterDir="false" />
     </list>
@@ -60,55 +60,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PlayerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LagalistarTest.testFrumstilla.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.askrifandiTest.testName.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.askrifandiTest.testName2.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [exec:java].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [org.apache.maven.plugins:maven-clean-plugin:2.5:help].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [org.apache.maven.plugins:maven-site-plugin:3.12.1:site].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [org.apache.maven.plugins:maven-site-plugin:3.3:site].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [org.codehaus.mojo:exec-maven-plugin:3.1.1:exec].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [org.codehaus.mojo:exec-maven-plugin:3.1.1:java].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [org.openjfx:javafx-maven-plugin:0.0.8:run].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [site].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AudioPlayer3 [test].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/OneDrive - Menntaský/Documents/AdioPlayer-notendaprofanir-main/AdioPlayer-notendaprofanir-main/forritið/Audioplayer&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.PlayerApplication.executor": "Run",
+    "JUnit.LagalistarTest.testFrumstilla.executor": "Run",
+    "JUnit.askrifandiTest.executor": "Run",
+    "JUnit.askrifandiTest.testName.executor": "Run",
+    "JUnit.askrifandiTest.testName2.executor": "Run",
+    "JUnit.lagTest.executor": "Run",
+    "JUnit.lagalistiTest.executor": "Run",
+    "Maven.AudioPlayer3 [compile].executor": "Run",
+    "Maven.AudioPlayer3 [exec:java].executor": "Run",
+    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
+    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-clean-plugin:2.5:help].executor": "Run",
+    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
+    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-site-plugin:3.12.1:site].executor": "Run",
+    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-site-plugin:3.3:site].executor": "Run",
+    "Maven.AudioPlayer3 [org.codehaus.mojo:exec-maven-plugin:3.1.1:exec].executor": "Run",
+    "Maven.AudioPlayer3 [org.codehaus.mojo:exec-maven-plugin:3.1.1:java].executor": "Run",
+    "Maven.AudioPlayer3 [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
+    "Maven.AudioPlayer3 [package].executor": "Run",
+    "Maven.AudioPlayer3 [site].executor": "Run",
+    "Maven.AudioPlayer3 [test].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Administrator/OneDrive - Menntaský/Documents/Verkefni Audio/2024/Verkefni 4 - AudioPlayer",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Documents\Viðmótsforritun\AudioPlayer3.1\src\main\resources\v\vidmot\media" />
       <recent name="C:\Users\Administrator\OneDrive - Menntaský\Documents\Viðmótsforritun\AudioPlayer3\src\main\resources\v" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LagalistarTest.testFrumstilla">
-    <configuration name="LagalistarTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AudioPlayer3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LagalistarTest" />
-      <option name="METHOD_NAME" value="setTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="LagalistarTest.testFrumstilla" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
@@ -119,22 +112,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="askrifandiTest.emptyString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="askrifandiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="askrifandiTest" />
-      <option name="METHOD_NAME" value="emptyString" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="askrifandiTest.isNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="lagTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="askrifandiTest" />
-      <option name="METHOD_NAME" value="isNull" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="lagTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lagalistiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AudioPlayer3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="lagalistiTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.lagTest" />
+        <item itemvalue="JUnit.askrifandiTest" />
+        <item itemvalue="JUnit.lagalistiTest" />
         <item itemvalue="JUnit.LagalistarTest.testFrumstilla" />
         <item itemvalue="JAR Application.AudioPlayer3-1.0-SNAPSHOT.jar" />
-        <item itemvalue="JUnit.LagalistarTest.setTest" />
-        <item itemvalue="JUnit.askrifandiTest.isNull" />
-        <item itemvalue="JUnit.askrifandiTest.emptyString" />
       </list>
     </recent_temporary>
   </component>
