@@ -26,10 +26,14 @@ Maven:
 - `mvn test` runs all test cases (i.e. all classes with a name that either starts with `Test` or ends with `Test`,
   `Tests`, or `TestCase`). As long as you have not finished implementing all packages, it is better to use the IDE to
   run individual test cases or package-level test suites.
+- `mvn package`
+- `mvn site`
+- `mvn exec:java`
+
 
 ## License
 brackets: [MIT](https://spdx.org/licenses/MIT.html)
 
 ## Usage
 
-### Executin the Main Method
+### Executing the Main Method

@@ -7,12 +7,13 @@ import javafx.scene.Scene;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class ViewSwitcher {
 
     private static Map<View, Parent> cache = new HashMap<>();
 
-    private static final Map<View, Scene> controllers = new HashMap<>();
+    private static final Map<View, Objects> controllers = new HashMap<>();
     private static Scene scene;
 
     public static void setScene(Scene scene){

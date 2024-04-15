@@ -4,8 +4,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import v.vinnsla.Askrifandi;
 
 import java.io.IOException;
+import java.util.Optional;
 
 public class PlayerApplication extends Application {
     @Override
