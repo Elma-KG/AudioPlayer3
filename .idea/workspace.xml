@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="readme updated">
-      <change afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/AskrifandiObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/ObservableAskrifandi.java" afterDir="false" />
+    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="observable added">
+      <change afterPath="$PROJECT_DIR$/src/markdown/Skjámynd 2024-04-16 134747.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/markdown/markdown.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,6 +96,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Documents\Viðmótsforritun\AudioPlayer3.9\src\main\java\v\markdown" />
+      <recent name="C:\Users\Administrator\Documents\Viðmótsforritun\AudioPlayer3.9\src\main\resources\v\vidmot\media" />
       <recent name="C:\Users\Administrator\Documents\Viðmótsforritun\AudioPlayer3.1\src\main\resources\v\vidmot\media" />
       <recent name="C:\Users\Administrator\OneDrive - Menntaský\Documents\Viðmótsforritun\AudioPlayer3\src\main\resources\v" />
     </key>
@@ -224,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713261076534</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="observable added">
+      <option name="closed" value="true" />
+      <created>1713268364547</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713268364547</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,7 +256,8 @@
     <MESSAGE value="lag og askrifandi Test eru komin" />
     <MESSAGE value="readme.md added and license" />
     <MESSAGE value="readme updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme updated" />
+    <MESSAGE value="observable added" />
+    <option name="LAST_COMMIT_MESSAGE" value="observable added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
