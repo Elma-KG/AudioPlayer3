@@ -20,7 +20,12 @@ Both the implementation and the testa are in Java package 'AudioPlayer.src', but
 
 ## Building
 
-Maven:
+### Maven:
+<b>Maven Compiler Plugin:</b>
+Maven source 21, version 3.11.0.
+
+<b>JavaFX Maven Plugin:</b>
+Version 0.0.8. (Group ID: org.openjfx) <br>
 
 - `mvn compile` compiles all implementation classes.
 - `mvn test` runs all test cases (i.e. all classes with a name that either starts with `Test` or ends with `Test`,
@@ -37,3 +42,8 @@ brackets: [MIT](https://spdx.org/licenses/MIT.html)
 ## Usage
 
 ### Executing the Main Method
+
+To be able to load the program there are two ways, one with maven where you go to Maven -> Plugins
+-> javafx -> javafx:run
+
+The second way is through PlayerApplication and pressing the run current file. PlayerApplication is the main Class.
