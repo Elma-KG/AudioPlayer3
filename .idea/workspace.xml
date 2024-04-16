@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="lag og askrifandi Test eru komin">
+    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="readme updated">
+      <change afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/AskrifandiObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/ObservableAskrifandi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/AskrifandiDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/AskrifandiDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/PlayerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/PlayerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/ViewSwitcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/ViewSwitcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +19,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -60,48 +59,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.PlayerApplication.executor": "Run",
-    "JUnit.LagalistarTest.testFrumstilla.executor": "Run",
-    "JUnit.askrifandiTest.executor": "Run",
-    "JUnit.askrifandiTest.testName.executor": "Run",
-    "JUnit.askrifandiTest.testName2.executor": "Run",
-    "JUnit.lagTest.executor": "Run",
-    "JUnit.lagalistiTest.executor": "Run",
-    "Maven.AudioPlayer3 [compile].executor": "Run",
-    "Maven.AudioPlayer3 [exec:java].executor": "Run",
-    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
-    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-clean-plugin:2.5:help].executor": "Run",
-    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
-    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-site-plugin:3.12.1:site].executor": "Run",
-    "Maven.AudioPlayer3 [org.apache.maven.plugins:maven-site-plugin:3.3:site].executor": "Run",
-    "Maven.AudioPlayer3 [org.codehaus.mojo:exec-maven-plugin:3.1.1:exec].executor": "Run",
-    "Maven.AudioPlayer3 [org.codehaus.mojo:exec-maven-plugin:3.1.1:java].executor": "Run",
-    "Maven.AudioPlayer3 [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
-    "Maven.AudioPlayer3 [package].executor": "Run",
-    "Maven.AudioPlayer3 [site].executor": "Run",
-    "Maven.AudioPlayer3 [test].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Administrator/OneDrive - Menntaský/Documents/Verkefni Audio/2024/Verkefni 4 - AudioPlayer",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PlayerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LagalistarTest.testFrumstilla.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.askrifandiTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.askrifandiTest.testName.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.askrifandiTest.testName2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.lagTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.lagalistiTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [exec:java].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [org.apache.maven.plugins:maven-clean-plugin:2.5:help].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [org.apache.maven.plugins:maven-site-plugin:3.12.1:site].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [org.apache.maven.plugins:maven-site-plugin:3.3:site].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [org.codehaus.mojo:exec-maven-plugin:3.1.1:exec].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [org.codehaus.mojo:exec-maven-plugin:3.1.1:java].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [org.openjfx:javafx-maven-plugin:0.0.8:run].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [site].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AudioPlayer3 [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/OneDrive - Menntaský/Documents/Verkefni Audio/2024/Verkefni 4 - AudioPlayer&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Documents\Viðmótsforritun\AudioPlayer3.1\src\main\resources\v\vidmot\media" />
       <recent name="C:\Users\Administrator\OneDrive - Menntaský\Documents\Viðmótsforritun\AudioPlayer3\src\main\resources\v" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JAR Application.AudioPlayer3-1.0-SNAPSHOT.jar">
     <configuration name="LagalistarTest.testFrumstilla" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
@@ -217,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712912670703</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="readme updated">
+      <option name="closed" value="true" />
+      <created>1713261076534</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713261076534</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,7 +245,8 @@
     <MESSAGE value="bin added and gitignore" />
     <MESSAGE value="lag og askrifandi Test eru komin" />
     <MESSAGE value="readme.md added and license" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme.md added and license" />
+    <MESSAGE value="readme updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
