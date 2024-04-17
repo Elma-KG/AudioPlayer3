@@ -1,25 +1,18 @@
 # HBV202G AudioPlayer
+By Elma Karen Gunnarsdóttir and Jóhannes Jóhannesson
+
 A project that can make you "login" with your name and then make you chose between a few playlist, and after choosing one you can play the song that 
 are on that playlist. Making the song stop and start, while also seeing the progress of how much of the song has played.
 
 ## Installation
 
-This project is a Maven project, i.e. it uses the standard Maven project structure that your IDE should understand
-when you `git clone` it. The provided Maven POM includes the JUnit4 dependency.
+### System requirements
+Have the followint installed on your system
+- Java Development Kit (JDK)
 
 ## Project Structure
 
-Design pattern [here](src/markdown/Skjámynd%202024-04-16%20134747.png)
-
-
-Both the implementation and the testa are in Java package 'AudioPlayer.src', but in the 'src' directories:
-
--'src/java/v/vidmot':
-    -
-
-
--'src/test/java':
-    -
+UML Class diagram: [here](src/markdown/Skjámynd%202024-04-16%20134747.png)
 
 ## Building
 
@@ -38,10 +31,6 @@ As long as you have not finished implementing all packages, it is better to use 
 - `mvn site` generates documentation which later can be open in a browser, generated into a target folder
 - `mvn exec:java` executes the system from the maven command
 
-
-## License
-[MIT](LICENSE)
-
 ## Usage
 
 ### Executing the Main Method
@@ -51,4 +40,10 @@ To be able to load the program there are a few ways, one with maven where you go
 
 The second way is through PlayerApplication and pressing the run current file in the top right corner. PlayerApplication is the main Class.
 
-Another one is using the jar!!!  
+If users do not have Maven, the they can run it as the following:
+Package classes and create jar file with: .\creatjar.cmd
+Run the jar file: .\runjar.cmd
+
+
+## License
+[MIT](LICENSE)
