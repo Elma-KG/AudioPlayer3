@@ -41,8 +41,8 @@ To be able to load the program there are a few ways, one with maven where you go
 The second way is through PlayerApplication and pressing the run current file in the top right corner. PlayerApplication is the main Class.
 
 If users do not have Maven, the they can run it as the following:
-Package classes and create jar file with: .\creatjar.cmd
-Run the jar file: .\runjar.cmd
+- Package classes and create jar file with: .\creatjar.cmd
+- Run the jar file:    .\runjar.cmd
 
 
 ## License
