@@ -7,7 +7,7 @@ are on that playlist. Making the song stop and start, while also seeing the prog
 ## Installation
 
 ### System requirements
-Have the followint installed on your system
+Have the following installed on your system
 - Java Development Kit (JDK)
 
 ## Project Structure
