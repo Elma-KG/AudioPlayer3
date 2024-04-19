@@ -13,6 +13,11 @@ public class Askrifandi {
 
     private final StringProperty nafn = new SimpleStringProperty();
 
+    /**
+     * Fallið býr til nýjan áskrifanda
+     * @param nafn
+     */
+
     public Askrifandi(String nafn){
         setNafn(nafn);
     }

@@ -15,6 +15,11 @@ public class Lagalistar {
 
     private static final Lagalisti[] listar = new Lagalisti[2];
 
+    /**
+     * Smiður sem býr til lagalista út frá annarri skrá með hjálp lesaLog() fallsins úr klasanum lagalisti.
+     *
+     */
+
     public static void frumstilla(){
         for (int i = 0; i < listar.length; i++){
             listar[i] = new Lagalisti();

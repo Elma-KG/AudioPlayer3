@@ -9,6 +9,14 @@ public class Lag {
 
     private final int lengd;
 
+    /**
+     * Smiður sem býr til lag með nafn, mynd, lengd og slóð að laginu.
+     * @param slod
+     * @param mynd
+     * @param nafn
+     * @param lengd
+     */
+
 
     public Lag(String slod, String mynd, String nafn, int lengd){
         hljodskraNafn = slod;

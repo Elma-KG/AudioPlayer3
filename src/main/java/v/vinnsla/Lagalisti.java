@@ -18,6 +18,11 @@ public class Lagalisti {
     private int currentIndex =0;
 
 
+    /**
+     *
+     * @param nafnASkra
+     * @throws IOException
+     */
 
     public void lesaLog(String nafnASkra) throws IOException {
 

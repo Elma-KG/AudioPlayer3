@@ -19,6 +19,8 @@ public class AskrifandiDialog extends Dialog<Askrifandi> {
     protected TextField fxnafnTextField;   //fxNafn
 
 
+
+
     public DialogPane lesaDialog(){
         FXMLLoader fxmlLoader = new FXMLLoader(AskrifandiDialog.class.getResource(View.ASKRIFANDI.getFileName()));
         try {
