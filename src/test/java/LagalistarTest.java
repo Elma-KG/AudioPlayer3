@@ -22,16 +22,14 @@ public class LagalistarTest {
     }
 
     @Test
-    public void testException()throws IOException {
-        Lagalistar.setIndex(4); // Assuming there are fewer than 5 elements in your array
-        // This lambda executes the code that should throw the exception
+    public void testException() {
+        Lagalistar.setIndex(4);
         assertThrows(ArrayIndexOutOfBoundsException.class, () -> Lagalistar.getNuverandi());
     }
 
     @Test
-    public void testException2()throws IOException {
-        Lagalistar.setIndex(-1); // Assuming there are fewer than 5 elements in your array
-        // This lambda executes the code that should throw the exception
+    public void testException2() {
+        Lagalistar.setIndex(-1);
         assertThrows(ArrayIndexOutOfBoundsException.class, () -> Lagalistar.getNuverandi());
     }
 

@@ -9,22 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="Jar file">
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packagejar.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runjar.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/AudioPlayer3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/AudioPlayer3_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/AskrifandiDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/AskrifandiDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/ObservableAskrifandi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/ObservableAskrifandi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/PlayerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/PlayerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/PlayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/ViewSwitcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/ViewSwitcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vinnsla/Lagalisti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vinnsla/Lagalisti.java" afterDir="false" />
+    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="jar file, test og javadoc">
       <change beforePath="$PROJECT_DIR$/src/test/java/LagalistarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LagalistarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lagalistiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lagalistiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +102,7 @@
       <recent name="C:\Users\Administrator\OneDrive - Menntaský\Documents\Viðmótsforritun\AudioPlayer3\src\main\resources\v" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LagalistarTest.testException2">
+  <component name="RunManager" selected="JUnit.LagalistarTest.testException">
     <configuration name="LagalistarTest.testException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
@@ -169,8 +155,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LagalistarTest.testException2" />
         <item itemvalue="JUnit.LagalistarTest.testException" />
+        <item itemvalue="JUnit.LagalistarTest.testException2" />
         <item itemvalue="JUnit.lagalistiTest.testNaesti" />
         <item itemvalue="JUnit.lagalistiTest.testFileNotFound" />
         <item itemvalue="JUnit.lagalistiTest.testLesaLog" />
@@ -249,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713487918232</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="jar file, test og javadoc">
+      <option name="closed" value="true" />
+      <created>1713529157666</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713529157666</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -274,7 +268,8 @@
     <MESSAGE value="lag og askrifandi Test eru komin" />
     <MESSAGE value="readme.md added and license" />
     <MESSAGE value="Jar file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jar file" />
+    <MESSAGE value="jar file, test og javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="jar file, test og javadoc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
