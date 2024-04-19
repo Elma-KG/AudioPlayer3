@@ -37,6 +37,11 @@ public class PlayerController {
 
     }
 
+    /**
+     * Fall fyrir þegar ýtt er á lista, þá er fundið hvaða lista var ýtt á og skipt yfir á view LISTI
+     * @param mouseEvent
+     */
+
     @FXML
     public void onVeljaLista(ActionEvent mouseEvent){
 
@@ -57,6 +62,9 @@ public class PlayerController {
 
     }
 
+    /**
+     * Fall fyrir þegar ýtt er á Login takkan og þá er birtur dialog til að logga sig inn
+     */
 
     public void onLogin(){
         AskrifandiDialog dialog = new AskrifandiDialog(new Askrifandi(ASKRIFANDI));

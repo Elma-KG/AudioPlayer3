@@ -19,7 +19,10 @@ public class AskrifandiDialog extends Dialog<Askrifandi> {
     protected TextField fxnafnTextField;   //fxNafn
 
 
-
+    /**
+     * Les inn .fxml skrá til að birta sem dialog
+     * @return
+     */
 
     public DialogPane lesaDialog(){
         FXMLLoader fxmlLoader = new FXMLLoader(AskrifandiDialog.class.getResource(View.ASKRIFANDI.getFileName()));
@@ -31,6 +34,10 @@ public class AskrifandiDialog extends Dialog<Askrifandi> {
         }
     }
 
+    /**
+     *Smiður sem býr til nýjan áskrifandiDialog og setur titil hans
+     * @param a
+     */
 
     public AskrifandiDialog(Askrifandi a){
         //super();
@@ -43,6 +50,10 @@ public class AskrifandiDialog extends Dialog<Askrifandi> {
         setResultConverter();
     }
     //tékkar hvor að það var sett eitthvað í textfield þar sem nafnið á að koma og hvort var ýtt á OK
+
+    /**
+     * Lýsir hvernig niðurstaða dialogsins er höndlað. Hér er nafn áskrifandans sett á áskrifandi.
+     */
 
     private void setResultConverter(){
         setResultConverter(b -> {

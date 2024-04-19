@@ -26,12 +26,20 @@ public class ObservableAskrifandi implements AskrifandiObserver {
         observers.remove(observer);
     }
 
+    /**
+     * Lætur Observer vita og uppfærir
+     */
+
     private void notifyObservers() {
         for (AskrifandiObserver observer : observers) {
             observer.updateAsrkifandi(this);
         }
     }
 
+    /**
+     * uppfærir áskrifanda
+     * @param askrifandi
+     */
     @Override
     public void updateAsrkifandi(ObservableAskrifandi askrifandi) {
         nafn = askrifandi.getNafn();

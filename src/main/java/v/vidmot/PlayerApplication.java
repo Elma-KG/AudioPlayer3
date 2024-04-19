@@ -10,6 +10,12 @@ import java.io.IOException;
 import java.util.Optional;
 
 public class PlayerApplication extends Application {
+
+    /**
+     * Fall til að ræsa forritið
+     * @param stage
+     * @throws IOException
+     */
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(PlayerApplication.class.getResource("heima-view.fxml"));

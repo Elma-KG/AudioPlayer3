@@ -20,6 +20,12 @@ public class ViewSwitcher {
         ViewSwitcher.scene = scene;
     }
 
+    /**
+     * Skiptir um view og og tekurinn boolean fyrir cache sem greinir hvort eigi að geyma upplýsingar
+     * @param view
+     * @param isCache
+     */
+
     public static void switchTo(View view, boolean isCache) {
 
         if (scene == null) {

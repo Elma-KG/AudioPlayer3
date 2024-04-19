@@ -19,7 +19,7 @@ public class Lagalisti {
 
 
     /**
-     *
+     * fallið les inn nafn á skrá sem heldur utan um upplýsingar um lagalista
      * @param nafnASkra
      * @throws IOException
      */
@@ -46,6 +46,10 @@ public class Lagalisti {
 
         }
 
+
+    /**
+     * fer í næsta
+     */
     public void naesti(){
         currentIndex = ++currentIndex % lagListi.size();
     }

@@ -9,19 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/AudioPlayer3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="78b942a1-9fb9-4466-919d-5650cf9a9d00" name="Changes" comment="Jar file">
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packagejar.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runjar.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/AudioPlayer3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/AudioPlayer3_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mymanifest.mf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/AskrifandiDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/AskrifandiDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vinnsla/Askrifandi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vinnsla/Askrifandi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vinnsla/Lag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vinnsla/Lag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v/vinnsla/Lagalistar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vinnsla/Lagalistar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/ObservableAskrifandi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/ObservableAskrifandi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/PlayerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/PlayerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/PlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v/vidmot/ViewSwitcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vidmot/ViewSwitcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/v/vinnsla/Lagalisti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v/vinnsla/Lagalisti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LagalistarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LagalistarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lagalistiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lagalistiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +106,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/OneDrive - Menntaský/Documents/Verkefni Audio/2024/Verkefni 4 - AudioPlayer&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.21494253&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -113,52 +116,64 @@
       <recent name="C:\Users\Administrator\OneDrive - Menntaský\Documents\Viðmótsforritun\AudioPlayer3\src\main\resources\v" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.AudioPlayer3.jar">
-    <configuration name="lagTest.testAllNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LagalistarTest.testException2">
+    <configuration name="LagalistarTest.testException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="lagTest" />
-      <option name="METHOD_NAME" value="testAllNull" />
+      <option name="MAIN_CLASS_NAME" value="LagalistarTest" />
+      <option name="METHOD_NAME" value="testException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lagalistiTest.indexIsNegitive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LagalistarTest.testException2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AudioPlayer3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LagalistarTest" />
+      <option name="METHOD_NAME" value="testException2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lagalistiTest.testFileNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="lagalistiTest" />
-      <option name="METHOD_NAME" value="indexIsNegitive" />
+      <option name="METHOD_NAME" value="testFileNotFound" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lagalistiTest.testGetLagListi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="lagalistiTest.testLesaLog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AudioPlayer3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="lagalistiTest" />
-      <option name="METHOD_NAME" value="testGetLagListi" />
+      <option name="METHOD_NAME" value="testLesaLog" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AudioPlayer3-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/target/AudioPlayer3-1.0-SNAPSHOT.jar" />
-      <method v="2" />
-    </configuration>
-    <configuration name="AudioPlayer3.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/AudioPlayer3_jar/AudioPlayer3.jar" />
-      <method v="2" />
+    <configuration name="lagalistiTest.testNaesti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AudioPlayer3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="lagalistiTest" />
+      <option name="METHOD_NAME" value="testNaesti" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.AudioPlayer3.jar" />
-        <item itemvalue="JUnit.lagTest.testAllNull" />
-        <item itemvalue="JUnit.lagalistiTest.testGetLagListi" />
-        <item itemvalue="JUnit.lagalistiTest.indexIsNegitive" />
-        <item itemvalue="JAR Application.AudioPlayer3-1.0-SNAPSHOT.jar" />
+        <item itemvalue="JUnit.LagalistarTest.testException2" />
+        <item itemvalue="JUnit.LagalistarTest.testException" />
+        <item itemvalue="JUnit.lagalistiTest.testNaesti" />
+        <item itemvalue="JUnit.lagalistiTest.testFileNotFound" />
+        <item itemvalue="JUnit.lagalistiTest.testLesaLog" />
       </list>
     </recent_temporary>
   </component>
@@ -226,8 +241,19 @@
       <option name="project" value="LOCAL" />
       <updated>1712912670703</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Jar file">
+      <option name="closed" value="true" />
+      <created>1713487918232</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713487918232</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <option name="startingDirectory" value="$USER_HOME$" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -247,7 +273,8 @@
     <MESSAGE value="bin added and gitignore" />
     <MESSAGE value="lag og askrifandi Test eru komin" />
     <MESSAGE value="readme.md added and license" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme.md added and license" />
+    <MESSAGE value="Jar file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jar file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
